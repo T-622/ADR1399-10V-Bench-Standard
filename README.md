@@ -12,4 +12,6 @@ The design of the board is relatively simple:
 
 ![Board Block Diagram](BlockDiagram.png)
 
+I decided to add the LT3045 in the chance that a linear, low-noise supply is not available when testing. This allows for a +16-20VDC input on the board's input connector which is then fed to the LT3045, which can be selected as the board's main source through a selector switch. The regulator also features a PG (Power Good) indicator. The ultra-high PSRR LDO used here is usually deisgned for RF applications, or applications where low voltage rail noise is needed, along with a settable voltage output.
+
 
