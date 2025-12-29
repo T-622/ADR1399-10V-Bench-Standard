@@ -41,7 +41,7 @@ The board was laid out to prioritize thermal isolation of the ADR1399 from any o
 
 Note: 10VREFv1.zip are the associated gerbers for this project that can be imported directly into the ordering utility of any major manufacturer
 
-Building the boards is relatively simple, the DigiKey BOM is attached in the files for this project, and can be directly imported. The BOM cost w/o the WAGO latch terminals for the input and output side are about CA$75/board, or US$54.78/board. I will opt to test with Banana terminals for testing purposes, and to minimise thermal EMFs for now.
+Building the boards is relatively simple, the DigiKey BOM is attached in the files for this project, and can be directly imported. The BOM cost w/o the WAGO latch terminals for the input and output side are about CA$70/board, or US$51.11/board. I will opt to test with Banana terminals for testing purposes, and to minimise thermal EMFs for now.
 
 # **Verification:**
 
