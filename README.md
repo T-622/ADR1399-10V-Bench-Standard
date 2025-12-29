@@ -39,5 +39,6 @@ The board was laid out to prioritize thermal isolation of the ADR1399 from any o
 ![Board Top Side](topside.png)
 ![Board Bottom Side](bottomside.png)
 
+Note: 10VREFv1.zip are the associated gerbers for this project that can be imported directly into the ordering utility of any major manufacturer
 
 
