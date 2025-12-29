@@ -10,4 +10,6 @@ The LM399 was more difficult to obtain, and the ADR1000 would require a much mor
 
 The design of the board is relatively simple:
 
+![Board Block Diagram](BlockDiagram.png)
+
 
