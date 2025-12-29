@@ -28,5 +28,14 @@ The schematic is as follows:
 
 ![Schematic Diagram](sch.png)
 
+The board was laid out to prioritize thermal isolation of the ADR1399 from any other potential sources anywhere else on the board such as the LDO and Op-Amp:
+
+**Layout:**
+![Board Layout](layout.png)
+
+**Physical Board:**
+![Board Top Side](topside.png)
+![Board Bottom Side](bottomside.png)
+
 
 
