@@ -22,6 +22,11 @@ The design was first simulated in LTSpice to verify its' functionality before im
 
 ![LTSpice Simulations](sims.png)
 
+Initially, a 5mA draw was simulated, which should be more than plenty for this current design. White noise was added on the input to the LDO to simulate the output voltage and find any noise. Equally, a thermal simulation was performed with the tempcos of the various resistor network elements. Note, the tempcos are around 25ppm/C in the simulation, while the resistors used in the design are around 5ppm/C. 
+
+The schematic is as follows:
+
+![Schematic Diagram](sch.png)
 
 
 
