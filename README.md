@@ -10,7 +10,7 @@ The LM399 was more difficult to obtain, and the ADR1000 would require a much mor
 
 The design of the board is relatively simple:
 
-![Board Block Diagram](BlockDiagram.png)
+![Board Block Diagram](Images/BlockDiagram.png)
 
 **Power Supply:** I decided to add the LT3045 in the chance that a linear, low-noise supply is not available when testing. This allows for a +16-20VDC input on the board's input connector which is then fed to the [LT3045](https://www.analog.com/media/en/technical-documentation/data-sheets/lt3045.pdf), which can be selected as the board's main source through a selector switch. The regulator also features a PG (Power Good) indicator. The ultra-high PSRR LDO used here is usually deisgned for RF applications, or applications where low voltage rail noise is needed, along with a settable voltage output. Low noise at this stage is important, else it would usually reflect in the output. 
 
