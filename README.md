@@ -20,24 +20,24 @@ The design of the board is relatively simple:
 
 The design was first simulated in LTSpice to verify its' functionality before implementing the design in Altium:
 
-![LTSpice Simulations](sims.png)
+![LTSpice Simulations](Images/sims.png)
 
 Initially, a 5mA draw was simulated, which should be more than plenty for this current design. White noise was added on the input to the LDO to simulate the output voltage and find any noise. Equally, a thermal simulation was performed with the tempcos of the various resistor network elements. Note, the tempcos are around 25ppm/C in the simulation, while the resistors used in the design are around 5ppm/C. 
 
 The schematic is as follows:
 
-![Schematic Diagram](sch.png)
+![Schematic Diagram](Images/sch.png)
 
 The board was laid out to prioritize thermal isolation of the ADR1399 from any other potential sources anywhere else on the board such as the LDO and Op-Amp:
 
 **Layout:**
 
-![Board Layout](layout.png)
+![Board Layout](Images/layout.png)
 
 **Physical Board:**
 
-![Board Top Side](topside.png)
-![Board Bottom Side](bottomside.png)
+![Board Top Side](Images/topside.png)
+![Board Bottom Side](Images/bottomside.png)
 
 Note: 10VREFv1.zip are the associated gerbers for this project that can be imported directly into the ordering utility of any major manufacturer
 
@@ -45,4 +45,11 @@ Building the boards is relatively simple, the DigiKey BOM is attached in the fil
 
 # **Verification:**
 
-Will update this section once I obtain the boards and can begin burning in the ADR1399K
+### 12/30/2026 - ADR1399K's Recieved - Burn In Started:
+
+![ADR1399K Burn In Tests](Images/adr1399testing.png)
+
+The initial test setup is far from perfect, but I built a simple burn-in jig for the ADR1399KHZ part I recieved from DigiKey with a 2.67kOhm resistor in series with the zener for the 3mA zener current setting with a +15VDC supply for the heater and zener. The initial measurements were made with my Fluke 8845A 6-1/2 digit bench DMM which has been warming for several days before measurements. Equally, the ADR1399 had been burning in constantly for >48H before the measurements began. Measurements went overnight and around the 12H mark, I installed an insulating foam cap over the ADR1399's plastic package. As shown, the average range of the measurements after that point was around 25uV.
+
+However, it is here that the initial accuracies of the ADR1399 parts need to be highlighted. The original voltage divider on the board was designed with a 7.05V input voltage. However the recorded zener voltage was around **6.93945V**, which is 110.55mV lower than expected, but within AD's specified initial accuracy range of -300 to +250mV. In order to combat this, the 3-parallel resistor divider on the board consisting of the (59K || 2K || 5K) can be swapped for (75K || 3K || 3K) to fix the gain. However, you must first determine your specific zener voltage, as the initial Vz is not guaranteed.
+
