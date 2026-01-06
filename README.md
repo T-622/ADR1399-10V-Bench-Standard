@@ -45,7 +45,7 @@ Building the boards is relatively simple, the DigiKey BOM is attached in the fil
 
 # **Verification:**
 
-### 12/30/2026 - ADR1399K's Recieved - Burn In Started:
+### 12/30/2025 - ADR1399K's Recieved - Burn In Started:
 
 ![ADR1399K Burn In Tests](Images/adr1399testing.png)
 
@@ -53,3 +53,11 @@ The initial test setup is far from perfect, but I built a simple burn-in jig for
 
 However, it is here that the initial accuracies of the ADR1399 parts need to be highlighted. The original voltage divider on the board was designed with a 7.05V input voltage. However the recorded zener voltage was around **6.93945V**, which is 110.55mV lower than expected, but within AD's specified initial accuracy range of -300 to +250mV. In order to combat this, the 3-parallel resistor divider on the board consisting of the (59K || 2K || 5K) can be swapped for (75K || 3K || 3K) to fix the gain. However, you must first determine your specific zener voltage, as the initial Vz is not guaranteed.
 
+### 01/05/2026 - First PCBs recieved:
+
+![PCBs](Images/pcbs.png)
+
+The boards were produced by JLCPCB in China and they are up to standard. I opted for ENIG-RoHS finish on the boards mainly for the flatness of the finish and the boards. As a result, this will place less strain on component leads which is especially crucial for MLCCs and chip resistors which can fail prematurely or exhibit other effects under mechanical stress. However, despite meeting RoHS lead free criteria, the boards are assembled with ChipQuik T5 Sn63/Pb37 leaded solder paste for U1 and U2.
+
+Note: Hot air was used for the ICs first, but a hot plate will work equally as well. The capacitors and resistors were hand soldered due to a lack of a paste stencil at the time, but can be assembled with hot air and solder paste (leaded)
+Note 2: Some parts are delayed, thus the board is not fully assembled.
