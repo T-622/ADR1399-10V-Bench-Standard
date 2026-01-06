@@ -55,7 +55,7 @@ However, it is here that the initial accuracies of the ADR1399 parts need to be 
 
 ### 01/05/2026 - First PCBs recieved:
 
-![PCBs](Images/pcbs.png)
+![PCBs](Images/pcbs.jpg)
 
 The boards were produced by JLCPCB in China and they are up to standard. I opted for ENIG-RoHS finish on the boards mainly for the flatness of the finish and the boards. As a result, this will place less strain on component leads which is especially crucial for MLCCs and chip resistors which can fail prematurely or exhibit other effects under mechanical stress. However, despite meeting RoHS lead free criteria, the boards are assembled with ChipQuik T5 Sn63/Pb37 leaded solder paste for U1 and U2.
 
