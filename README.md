@@ -47,6 +47,8 @@ Building the boards is relatively simple, the DigiKey BOM is attached in the fil
 
 ### 12/30/2025 - ADR1399K's Recieved - Burn In Started:
 
+BOM Link: https://www.digikey.ca/short/1pw31f8j
+
 ![ADR1399K Burn In Tests](Images/adr1399testing.png)
 
 The initial test setup is far from perfect, but I built a simple burn-in jig for the ADR1399KHZ part I recieved from DigiKey with a 2.67kOhm resistor in series with the zener for the 3mA zener current setting with a +15VDC supply for the heater and zener. The initial measurements were made with my Fluke 8845A 6-1/2 digit bench DMM which has been warming for several days before measurements. Equally, the ADR1399 had been burning in constantly for >48H before the measurements began. Measurements went overnight and around the 12H mark, I installed an insulating foam cap over the ADR1399's plastic package. As shown, the average range of the measurements after that point was around 25uV.
