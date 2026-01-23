@@ -63,3 +63,21 @@ The boards were produced by JLCPCB in China and they are up to standard. I opted
 
 Note: Hot air was used for the ICs first, but a hot plate will work equally as well. The capacitors and resistors were hand soldered due to a lack of a paste stencil at the time, but can be assembled with hot air and solder paste (leaded)
 Note 2: Some parts are delayed, thus the board is not fully assembled.
+
+### 01/23/2026 - Overnight Tests
+
+I was testing relatively quickly after the ADR1399s  were recieved. I started testing for the zener voltage around the 130H mark and they are now around **6.93930V**. Constraints on my test environment required a better test setup / enclosure so I quickly threw together a 3D printed box for the boards and then resin printed the lid, and clear coated so I could see through the top for testing:
+
+![Enclosed Board](Images/boardenclosure.jpg)
+
+The enclosure was fit for 4mm binding posts, and for solid 12 / 14AWG wire to be soldered to the board and then to the posts. The idea here is to avoid large temperature gradients or air currents past the ADR1399.
+
+Since the boards had been sitting in this enclosure for a handful of weeks, I had the oppertunity to watch the voltage drift. Without statistics, the output voltage was around +10.000108V on my Fluke 8845A. I began strapping 20Mohm and 10Mohm resistors in parallel with the 75K || 3K || 3K bank to very slightly trim the gain downwards. I managed +10.00044 - 10.00045V with an approximate trim of 5Mohm in parallel with the network. 
+
+![10MOhm Trim](10MTrim.jpg)
+
+After about a week and a half of sitting at the same value, I have trimmed to hopefully the final value, of +10.00003V by using another 10M resistor in parallel; or 10/3 MOhm trim resistance. The data shown is for approximately 9 hours after the change took place:
+
+![Final Trim](finaltrim.jpg)
+
+![Voltage Settling](firstruntest.jpg)
