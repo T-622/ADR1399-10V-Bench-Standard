@@ -78,6 +78,6 @@ Since the boards had been sitting in this enclosure for a handful of weeks, I ha
 
 After about a week and a half of sitting at the same value, I have trimmed to hopefully the final value, of +10.00003V by using another 10M resistor in parallel; or 10/3 MOhm trim resistance. The data shown is for approximately 9 hours after the change took place:
 
-![Final Trim](finaltrim.jpg)
+![Final Trim](benchtest.jpg)
 
-![Voltage Settling](firstruntest.jpg)
+![Voltage Settling](ScreenShot_2.jpg)
