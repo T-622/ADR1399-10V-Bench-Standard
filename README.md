@@ -74,7 +74,7 @@ The enclosure was fit for 4mm binding posts, and for solid 12 / 14AWG wire to be
 
 Since the boards had been sitting in this enclosure for a handful of weeks, I had the oppertunity to watch the voltage drift. Without statistics, the output voltage was around +10.000108V on my Fluke 8845A. I began strapping 20Mohm and 10Mohm resistors in parallel with the 75K || 3K || 3K bank to very slightly trim the gain downwards. I managed +10.00044 - 10.00045V with an approximate trim of 5Mohm in parallel with the network. 
 
-![10MOhm Trim](Images/10MTrim.jpg)
+![10MOhm Trim](Images/10Mtrim.jpg)
 
 After about a week and a half of sitting at the same value, I have trimmed to hopefully the final value, of +10.00003V by using another 10M resistor in parallel; or 10/3 MOhm trim resistance. The data shown is for approximately 9 hours after the change took place:
 
