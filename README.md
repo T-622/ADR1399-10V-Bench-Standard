@@ -80,4 +80,6 @@ After about a week and a half of sitting at the same value, I have trimmed to ho
 
 ![Final Trim](Images/benchtest.jpg)
 
+The first graphs after 9H of power on past the final resistor trims:
+
 ![Voltage Settling](Images/ScreenShot_2.jpg)
