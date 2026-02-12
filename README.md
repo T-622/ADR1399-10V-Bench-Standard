@@ -92,4 +92,4 @@ The original board has now been powered on for approximately 1032Hrs now, with o
 
 As for the stability data, the SDM4065A used to measure has been constantly powered on for 4+ weeks, giving the internal reference some time to stabilize as best as possible. Over the past 165H, some data was logged, and it was noted that the boards have a significant influence from ambient temperatures, likely due to the resistor temperature coeffecients causing microvolts of fluctuations. Still, the reference stability is relaatively alright, and the ambient temperature caused the relative spread to be around 72uV. Std-Dev measurements will be added soon for the measurements featured below:
 
-![165HrTest](Images/165hrpoweron.jpg)
+![165HrTest](Images/165hrpoweron.JPG)
