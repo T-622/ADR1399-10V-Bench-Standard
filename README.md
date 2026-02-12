@@ -83,3 +83,13 @@ After about a week and a half of sitting at the same value, I have trimmed to ho
 The first graphs after 9H of power on past the final resistor trims:
 
 ![Voltage Settling](Images/ScreenShot_2.jpg)
+
+### 02/12/2026 - Long-term power on stability test
+
+The original board has now been powered on for approximately 1032Hrs now, with only one slight cool down in between. The boards are now located in a more temperature-isolated environment at around 23.7 - 24.0C, through a makeshift environmental chamber from an Amazon peltier-based mini-fridge:
+
+![Enviro-Chamber](Images/envirochamber.jpg)
+
+As for the stability data, the SDM4065A used to measure has been constantly powered on for 4+ weeks, giving the internal reference some time to stabilize as best as possible. Over the past 165H, some data was logged, and it was noted that the boards have a significant influence from ambient temperatures, likely due to the resistor temperature coeffecients causing microvolts of fluctuations. Still, the reference stability is relaatively alright, and the ambient temperature caused the relative spread to be around 72uV. Std-Dev measurements will be added soon for the measurements featured below:
+
+![165HrTest](Images/165hrpoweron.jpg)
