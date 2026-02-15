@@ -64,6 +64,8 @@ The boards were produced by JLCPCB in China and they are up to standard. I opted
 Note: Hot air was used for the ICs first, but a hot plate will work equally as well. The capacitors and resistors were hand soldered due to a lack of a paste stencil at the time, but can be assembled with hot air and solder paste (leaded)
 Note 2: Some parts are delayed, thus the board is not fully assembled.
 
+**DO NOT POPULATE C**
+
 ### 01/23/2026 - Overnight Tests
 
 I was testing relatively quickly after the ADR1399s  were recieved. I started testing for the zener voltage around the 130H mark and they are now around **6.93930V**. Constraints on my test environment required a better test setup / enclosure so I quickly threw together a 3D printed box for the boards and then resin printed the lid, and clear coated so I could see through the top for testing:
