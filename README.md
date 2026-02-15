@@ -64,7 +64,7 @@ The boards were produced by JLCPCB in China and they are up to standard. I opted
 Note: Hot air was used for the ICs first, but a hot plate will work equally as well. The capacitors and resistors were hand soldered due to a lack of a paste stencil at the time, but can be assembled with hot air and solder paste (leaded)
 Note 2: Some parts are delayed, thus the board is not fully assembled.
 
-**DO NOT POPULATE C**
+**DO NOT POPULATE C11, THE OP-AMP OUTPUT WILL OSCILLATE**
 
 ### 01/23/2026 - Overnight Tests
 
